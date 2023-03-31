@@ -7,10 +7,17 @@
     <title>
         Form
     </title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div>
-        class="container">
+    <div class="container">
+        <h1>
+            Personal Information Form
+        </h1>
+        <p class="para"Use this form to apply>
+
+        </p>
+        
         <form>
          <fieldset>
             <legend>
@@ -51,15 +58,17 @@
                             placeholder="Enter your number">
                             </div>
 
-                            <div class="form-control">
+                            <div class="form-control
+                            disable-flex">
                                 <label for="Email">Email</label>
                                 <input type="Email"
                                 placeholder="Enter your email">
                                 </div>
 
-                                <div class="form-control">
+                                <div class="form-control 
+                                display-flex">
                                     <input type="radio" id="male"
-                                    name="gender" value="male">
+                                    name="gender" value="male"checked> 
                                     <label for="Male">Male</label>
 
                                     <br>
@@ -108,6 +117,8 @@
             </fieldset>
          </p>
 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae doloribus molestiae ipsum iste laboriosam eum consequatur mollitia nisi numquam ipsa, dolore sapiente ab quisquam eos id, odit accusantium quibusdam.
+
          <p>
             <fieldset>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, veritatis.
@@ -125,11 +136,32 @@
                 </select>
             
             </fieldset>
-            <div>
+
+            <div class="form-control">
          <p>
             Agree to our terms and conditions
          </p>
          <input type="checkbox">
+        </div>
+        <div class="form-control">
+            
+        </div>
+        <div class="form-control">
+
+        </div>
+
+        <div class="form-control">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"
+            placeholder="Write a message"></textarea>
+
+        </div>
+
+        <div class="form-control">
+           <input type="reset"
+            class="action-btn">
+            <input type="submit"
+            class="action-btn">
         </div>
         </form>
     </div>
